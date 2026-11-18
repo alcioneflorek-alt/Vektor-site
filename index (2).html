@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vektor Systems — Engenharia em Climatização</title>
+<meta name="description" content="Projeto, instalação e manutenção de sistemas de climatização: splits, sistemas centrais, VRF, PMOC e refrigeração. Erechim/RS.">
+<meta property="og:title" content="Vektor Systems — Engenharia em Climatização">
+<meta property="og:description" content="Projeto, instalação e manutenção de ar-condicionado: splits, sistemas centrais, VRF e PMOC. Erechim/RS.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.vektorsystems.com.br/">
+<meta name="theme-color" content="#0E0F12">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%230E0F12'/%3E%3Cpolygon points='50,10 85,30 85,70 50,90 15,70 15,30' fill='none' stroke='%23C9A55A' stroke-width='7'/%3E%3Cpath d='M32 36 L50 68 L68 36' fill='none' stroke='%23C9A55A' stroke-width='10'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"HVACBusiness","name":"Vektor Systems","legalName":"Vektor Systems Ltda","url":"https://www.vektorsystems.com.br/","telephone":"+55-54-99365-1415","email":"contato@vektorsystems.com.br","taxID":"70.085.298/0001-65","address":{"@type":"PostalAddress","streetAddress":"Rua Nadyr Santin, 1125 - Paiol Grande","addressLocality":"Erechim","addressRegion":"RS","postalCode":"99712-511","addressCountry":"BR"},"areaServed":["RS","SC","PR","SP","GO","RJ"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0E0F12;--ink2:#17191D;--line:#2A2D33;--gold:#C9A55A;--gold2:#E3C47E;--gold-d:#7E5F22;--cream:#F5F2EC;--txt:#1A1A1A;--mut:#5C5648;--mut-d:#B8B2A6;--wa:#1F8F4E}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:'Sora',system-ui,sans-serif;color:var(--txt);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:var(--gold-d)}a:hover{color:var(--ink)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.serif{font-family:'Cinzel',serif}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:4px;text-transform:uppercase;color:var(--gold)}
+.eyebrow.dk{color:var(--gold-d)}
+h1,h2,h3{margin:0;line-height:1.15}
+h2{font-family:'Cinzel',serif;font-size:clamp(28px,4vw,42px);font-weight:700;letter-spacing:.5px}
+section{padding:96px 0}
+.btn{display:inline-flex;align-items:center;gap:10px;min-height:48px;padding:0 24px;border-radius:999px;font-weight:600;font-size:15px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;font-family:inherit;transition:transform .15s,background .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn-gold{background:var(--gold);color:var(--ink)}.btn-gold:hover{background:var(--gold2);color:var(--ink)}
+.btn-ghost{border-color:#5A5446;color:#F2EEE6}.btn-ghost:hover{border-color:var(--gold);color:#fff}
+.btn-dark{background:var(--ink);color:#fff}.btn-dark:hover{background:#000;color:#fff}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(14,15,18,.94);backdrop-filter:blur(8px);border-bottom:1px solid #22252A}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand b{font-family:'Cinzel',serif;font-size:22px;letter-spacing:4px;color:#F2EEE6;display:block;line-height:1}
+.brand small{font-family:'Cinzel',serif;font-size:8.5px;letter-spacing:6.5px;color:var(--gold)}
+.links{display:flex;gap:28px;align-items:center}
+.links a{color:#CFC9BD;text-decoration:none;font-size:14px}.links a:hover{color:var(--gold2)}
+.links a.btn{color:var(--ink)}.links a.btn:hover{color:var(--ink)}
+@media(max-width:860px){.links .hide-m{display:none}}
+
+/* hero */
+.hero{background:var(--ink);color:#F2EEE6;padding:88px 0 72px;position:relative;overflow:hidden}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.hero-art{order:-1;max-width:420px}}
+.hero h1{font-family:'Cinzel',serif;font-size:clamp(34px,5.2vw,60px);font-weight:700;letter-spacing:.5px;margin:18px 0 22px}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hero p.lead{font-size:18px;color:var(--mut-d);max-width:560px;margin:0 0 34px;font-weight:300}
+.cta{display:flex;flex-wrap:wrap;gap:14px}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#2A2D33;border:1px solid #2A2D33;border-radius:14px;overflow:hidden;margin-top:64px}
+@media(max-width:760px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.stat{background:var(--ink2);padding:22px 24px}
+.stat strong{display:block;font-family:'Cinzel',serif;font-size:26px;color:var(--gold2);font-weight:700}
+.stat span{font-size:13.5px;color:var(--mut-d)}
+.grid-bg{position:absolute;inset:0;background-image:linear-gradient(#ffffff08 1px,transparent 1px),linear-gradient(90deg,#ffffff08 1px,transparent 1px);background-size:48px 48px;pointer-events:none}
+
+/* serviços */
+.head{display:flex;flex-direction:column;gap:12px;max-width:700px;margin-bottom:48px}
+.head p{margin:0;color:var(--mut);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:20px}
+.card{border:1px solid #E6E1D7;border-radius:16px;padding:28px;background:#fff;display:flex;flex-direction:column;gap:12px;transition:border-color .2s,box-shadow .2s}
+.card{font:inherit;text-align:left;cursor:pointer;color:inherit;width:100%}
+.card .more{margin-top:auto;padding-top:6px;font-size:13.5px;font-weight:600;color:var(--gold-d)}
+.card:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.card:hover{border-color:var(--gold);box-shadow:0 10px 30px rgba(14,15,18,.07)}
+.card svg{width:40px;height:40px;stroke:var(--gold-d);fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.card h3{font-size:18px;font-weight:700}
+.card p{margin:0;color:var(--mut);font-size:14.5px}
+
+/* processo */
+.dark{background:var(--ink);color:#F2EEE6}
+.dark .head p{color:var(--mut-d)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;counter-reset:s}
+@media(max-width:900px){.steps{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.steps{grid-template-columns:1fr}}
+.step{border-top:2px solid var(--gold);padding-top:22px}
+.step b{font-family:'Cinzel',serif;color:var(--gold);font-size:15px;letter-spacing:2px}
+.step h3{font-size:19px;margin:10px 0 8px}
+.step p{margin:0;color:var(--mut-d);font-size:14.5px}
+
+/* segmentos */
+.cream{background:var(--cream)}
+.seg{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+.seg div{background:var(--cream);border-radius:12px;padding:20px 22px;display:flex;gap:14px;align-items:flex-start;border:1px solid #E6E1D7}
+.seg i{flex:0 0 10px;height:10px;margin-top:8px;background:var(--gold);transform:rotate(45deg)}
+.seg h3{font-size:16px}.seg p{margin:4px 0 0;font-size:14px;color:var(--mut)}
+
+/* marcas */
+.brands{display:flex;flex-wrap:wrap;gap:12px}
+.brands span{border:1px solid #DCD5C7;border-radius:999px;padding:10px 20px;font-weight:600;font-size:14px;letter-spacing:1px;color:#3B372F;background:#fff}
+
+/* contato */
+.contact{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+.info{display:flex;flex-direction:column;gap:22px}
+.info .row{display:flex;gap:16px;align-items:flex-start}
+.info svg{flex:0 0 22px;width:22px;height:22px;stroke:var(--gold);fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round;margin-top:3px}
+.info small{display:block;font-size:12px;letter-spacing:2px;color:var(--gold);font-weight:600}
+.info span,.info a.v{font-size:16px;color:#F2EEE6;text-decoration:none}
+.info a.v:hover{color:var(--gold2)}
+form{background:#fff;color:var(--txt);border-radius:18px;padding:32px;display:grid;grid-template-columns:1fr 1fr;gap:16px}
+form .full{grid-column:1/-1}
+@media(max-width:560px){form{grid-template-columns:1fr;padding:24px}}
+label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:#3B372F}
+input,select,textarea{font:inherit;font-size:15px;font-weight:400;padding:12px 14px;border:1px solid #D6D0C4;border-radius:10px;background:#FBFAF7;color:var(--txt);min-height:48px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);outline-offset:1px;border-color:var(--gold)}
+textarea{min-height:110px;resize:vertical}
+#ok{display:none;grid-column:1/-1;background:#F3EEE2;border-radius:10px;padding:16px;font-size:14.5px}
+#ok.show{display:block}
+dialog#dlg{border:0;padding:0;border-radius:20px;width:calc(100% - 32px);max-width:780px;max-height:90vh;background:#fff;color:var(--txt);box-shadow:0 30px 80px rgba(0,0,0,.4)}
+dialog#dlg::backdrop{background:rgba(8,9,11,.72)}
+@media(max-width:640px){dialog#dlg{width:100%;max-width:100%;height:100%;max-height:100%;border-radius:0;margin:0}}
+.dlg-in{display:flex;flex-direction:column;max-height:inherit;height:100%}
+.dlg-hd{background:var(--ink);color:#F2EEE6;padding:28px 28px 24px;position:relative}
+.dlg-hd h3{font-family:'Cinzel',serif;font-size:clamp(22px,3vw,30px);margin-top:8px;padding-right:48px}
+.dlg-x{position:absolute;top:18px;right:18px;width:44px;height:44px;border-radius:50%;border:1px solid #3A3E45;background:transparent;color:#F2EEE6;font-size:22px;cursor:pointer}
+.dlg-x:hover{border-color:var(--gold)}
+.dlg-bd{padding:26px 28px;overflow:auto;flex:1}
+.dlg-bd .intro{font-size:16.5px;margin:0 0 22px;color:#2B2A26}
+.dlg-bd h4{margin:22px 0 10px;font-size:12px;letter-spacing:3px;color:var(--gold-d)}
+.dlg-bd ul{margin:0;padding:0;list-style:none;display:grid;gap:8px}
+.dlg-bd li{position:relative;padding-left:22px;font-size:15px;color:#3B372F}
+.dlg-bd li::before{content:"";position:absolute;left:2px;top:9px;width:8px;height:8px;background:var(--gold);transform:rotate(45deg)}
+.dlg-bd .norms li::before{background:none;border:1.5px solid var(--gold-d)}
+.dlg-ft{padding:18px 28px;border-top:1px solid #ECE7DD;display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;background:#FBFAF7}
+.dlg-ft small{color:var(--mut);font-size:13px}
+.std{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+@media(max-width:900px){.std{grid-template-columns:1fr}}
+.std ul{margin:0;padding:0;list-style:none;display:grid;gap:14px}
+.std li{display:flex;gap:14px;align-items:flex-start;padding:16px 18px;border:1px solid #2A2D33;border-radius:12px;background:var(--ink2);font-size:15px;color:#E6E0D3}
+.std li svg{flex:0 0 20px;width:20px;height:20px;stroke:var(--gold);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;margin-top:2px}
+.envs{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.envs span{border:1px solid #3A3E45;border-radius:999px;padding:8px 16px;font-size:13.5px;color:#CFC9BD}
+.dif{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1px;background:#E3DDD0;border:1px solid #E3DDD0;border-radius:18px;overflow:hidden}
+@media(max-width:900px){.dif{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:560px){.dif{grid-template-columns:1fr}}
+.dif div{background:var(--cream);padding:30px 28px}
+.dif b{display:block;font-family:'Cinzel',serif;font-size:13px;letter-spacing:3px;color:var(--gold-d);margin-bottom:10px}
+.dif h3{font-size:18px;margin-bottom:8px}.dif p{margin:0;color:var(--mut);font-size:14.5px}
+.band{background:linear-gradient(0deg,#C9A55A,#C9A55A);color:var(--ink);padding:56px 0}
+.band .wrap{display:flex;flex-wrap:wrap;gap:28px;align-items:center;justify-content:space-between}
+.band h2{font-size:clamp(24px,3vw,32px)}.band p{margin:8px 0 0;max-width:640px;font-size:16px;color:#2B2416}
+.faq{display:flex;flex-direction:column;gap:12px;max-width:860px}
+.faq details{border:1px solid #E3DDD0;border-radius:14px;padding:0 22px;background:#fff}
+.faq summary{cursor:pointer;list-style:none;padding:20px 0;font-weight:600;font-size:16px;display:flex;justify-content:space-between;gap:16px}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";color:var(--gold-d);font-size:22px;line-height:1}
+.faq details[open] summary::after{content:"–"}
+.faq details p{margin:0 0 20px;color:var(--mut);font-size:15px}
+.region{margin-top:28px;padding-top:24px;border-top:1px solid #2A2D33;color:var(--mut-d);font-size:14px}
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+.flow path{stroke-dasharray:6 8;animation:flow 2.4s linear infinite}
+@keyframes flow{to{stroke-dashoffset:-28}}
+@media(prefers-reduced-motion:reduce){.flow path{animation:none}.reveal{opacity:1;transform:none;transition:none}}
+footer .cols{display:grid;grid-template-columns:2fr 1fr 1fr;gap:32px;width:100%}
+@media(max-width:760px){footer .cols{grid-template-columns:1fr}}
+footer h4{margin:0 0 10px;color:#C9A55A;font-size:12px;letter-spacing:3px}
+footer a{color:#B8B2A6;text-decoration:none;display:block;margin:4px 0}footer a:hover{color:#E3C47E}
+footer .legal{border-top:1px solid #1E2024;margin-top:28px;padding-top:20px;width:100%;font-size:12.5px}
+footer{background:#08090B;color:#8E887C;font-size:13.5px;padding:40px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+.float{position:fixed;right:20px;bottom:20px;z-index:30;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.float svg{width:30px;height:30px;stroke:#fff;fill:none;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a class="brand" href="#inicio" aria-label="Vektor Systems, início">
+   <svg width="40" height="40" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,6 88,28 88,72 50,94 12,72 12,28" fill="none" stroke="#C9A55A" stroke-width="6"/><path d="M30 34 L50 70 L70 34" fill="none" stroke="#C9A55A" stroke-width="10"/></svg>
+   <span><b>VEKTOR</b><small>SYSTEMS</small></span>
+  </a>
+  <nav class="links" aria-label="Menu principal">
+   <a class="hide-m" href="#servicos">Serviços</a>
+   <a class="hide-m" href="#engenharia">Engenharia</a>
+   <a class="hide-m" href="#padrao">Padrão</a>
+   <a class="hide-m" href="#segmentos">Segmentos</a>
+   <a class="hide-m" href="#contato">Contato</a>
+   <a class="btn btn-gold" href="https://wa.me/5554993651415" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+ </div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+ <div class="grid-bg" aria-hidden="true"></div>
+ <div class="wrap" style="position:relative">
+  <div class="hero-grid">
+   <div>
+    <p class="eyebrow">Engenharia em climatização</p>
+    <h1>Clima sob medida, com <em>padrão de engenharia.</em></h1>
+    <p class="lead">Projeto, instalação e manutenção de sistemas de ar-condicionado — do split residencial ao sistema central e VRF. Dimensionamento correto, equipe própria e PMOC em dia.</p>
+    <div class="cta">
+     <a class="btn btn-gold" href="https://wa.me/5554993651415?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Vektor%20e%20gostaria%20de%20um%20or%C3%A7amento." target="_blank" rel="noopener">Falar no WhatsApp</a>
+     <a class="btn btn-ghost" href="#contato">Solicitar orçamento</a>
+    </div>
+   </div>
+   <div class="hero-art" aria-hidden="true">
+    <svg viewBox="0 0 440 400" width="100%" fill="none" stroke-linecap="round" stroke-linejoin="round">
+     <g stroke="#3A3E45" stroke-width="1">
+      <rect x="20" y="20" width="400" height="360" rx="6"/>
+      <line x1="20" y1="300" x2="420" y2="300"/>
+     </g>
+     <g stroke="#C9A55A" stroke-width="1.6">
+      <rect x="60" y="56" width="200" height="56" rx="8"/>
+      <line x1="76" y1="96" x2="244" y2="96"/>
+      <g class="flow"><path d="M86 120 q12 14 0 28 q-12 14 0 28" opacity=".7"/><path d="M130 120 q12 14 0 28 q-12 14 0 28" opacity=".7"/><path d="M174 120 q12 14 0 28 q-12 14 0 28" opacity=".7"/><path d="M218 120 q12 14 0 28 q-12 14 0 28" opacity=".7"/></g>
+      <path d="M260 76 H330 V250"/><path d="M260 90 H316 V250" opacity=".6"/>
+      <rect x="290" y="250" width="100" height="80" rx="6"/>
+      <circle cx="340" cy="290" r="26"/><circle cx="340" cy="290" r="4"/>
+      <path d="M340 264 q10 14 0 26 q-10 12 0 26" opacity=".6"/><path d="M314 290 q14 -10 26 0 q12 10 26 0" opacity=".6"/>
+     </g>
+     <g stroke="#7E7768" stroke-width="1">
+      <line x1="60" y1="40" x2="260" y2="40"/><line x1="60" y1="36" x2="60" y2="44"/><line x1="260" y1="36" x2="260" y2="44"/>
+      <line x1="404" y1="250" x2="404" y2="330"/><line x1="400" y1="250" x2="408" y2="250"/><line x1="400" y1="330" x2="408" y2="330"/>
+     </g>
+     <g fill="#9A9384" font-family="Sora" font-size="10" stroke="none">
+      <text x="140" y="34">EVAPORADORA</text>
+      <text x="300" y="345">CONDENSADORA</text>
+      <text x="336" y="170" transform="rotate(90 336 170)">LINHA FRIGORÍFICA</text>
+      <text x="60" y="230">CARGA TÉRMICA</text>
+     </g>
+    </svg>
+   </div>
+  </div>
+  <div class="stats">
+   <div class="stat"><strong>15 anos</strong><span>de experiência da equipe técnica</span></div>
+   <div class="stat"><strong>6 estados</strong><span>RS · SC · PR · SP · GO · RJ</span></div>
+   <div class="stat"><strong>Split a VRF</strong><span>do residencial ao sistema central</span></div>
+   <div class="stat"><strong>PMOC</strong><span>conforme Lei 13.589/2018</span></div>
+  </div>
+ </div>
+</section>
+
+<section id="servicos">
+ <div class="wrap">
+  <div class="reveal head"><p class="eyebrow dk">Serviços</p><h2>Soluções completas em climatização</h2><p>Atendemos do projeto à manutenção, com equipe própria e responsabilidade técnica em cada etapa.</p></div>
+  <div class="cards reveal">
+   <button type="button" class="card" data-svc="projetos"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="6" y="6" width="28" height="28" rx="3"/><path d="M6 14h28M14 6v28M20 22l4 4 6-8"/></svg><h3>Projetos e dimensionamento</h3><p>Cálculo de carga térmica, definição de equipamentos, layout e especificação técnica para obras e reformas.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="splits"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="9" width="30" height="12" rx="3"/><path d="M9 17h22M12 25q2 3 0 6M20 25q2 3 0 6M28 25q2 3 0 6"/></svg><h3>Instalação de splits</h3><p>Hi-wall, piso-teto, cassete, dutado e multi-split, com tubulação, vácuo e testes de estanqueidade.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="vrf"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="5" width="12" height="12" rx="2"/><rect x="23" y="5" width="12" height="12" rx="2"/><rect x="14" y="25" width="12" height="10" rx="2"/><path d="M11 17v4h18v-4M20 21v4"/></svg><h3>Sistemas centrais e VRF</h3><p>Instalação e manutenção de sistemas centrais de ar-condicionado, VRF e ventilação para empresas e edifícios.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="pmoc"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="8" y="5" width="24" height="30" rx="3"/><path d="M14 13h12M14 19h12M14 25h7"/><path d="M24 26l2 2 4-5"/></svg><h3>PMOC e manutenção</h3><p>Plano de manutenção, execução periódica e relatórios mensais com responsável técnico, como exige a lei.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="refrigeracao"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="5" width="26" height="30" rx="3"/><path d="M7 16h26M12 10v3M12 21v6M24 24l3-3m0 0l3 3m-3-3v8"/></svg><h3>Refrigeração comercial</h3><p>Câmaras frias, bebedouros industriais e troca de compressores para indústria, comércio e frigoríficos.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="infraestrutura"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 30h30M9 30V14l11-8 11 8v16"/><path d="M15 30v-8h10v8M5 22h6M29 22h6"/></svg><h3>Infraestrutura para obras</h3><p>Tubulação frigorífica, drenos e elétrica dedicada executados antes do acabamento, sem quebra-quebra depois.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="laudos"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="13"/><path d="M20 7v4M20 29v4M7 20h4M29 20h4M20 20l6-5"/></svg><h3>Laudos e diagnósticos</h3><p>Laudos técnicos de equipamentos para controle de patrimônio, seguro e decisão de reparo ou troca.</p><span class="more">Ver detalhes técnicos →</span></button>
+   <button type="button" class="card" data-svc="exaustao"><svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="4"/><path d="M20 16c0-6 4-10 8-8s0 8-4 9M24 20c6 0 10 4 8 8s-8 0-9-4M20 24c0 6-4 10-8 8s0-8 4-9M16 20c-6 0-10-4-8-8s8 0 9 4"/></svg><h3>Exaustão e ventilação</h3><p>Sistemas de exaustão e renovação de ar para cozinhas, indústrias e ambientes que exigem qualidade do ar.</p><span class="more">Ver detalhes técnicos →</span></button>
+  </div>
+ </div>
+</section>
+
+<section class="cream" id="diferenciais">
+ <div class="wrap">
+  <div class="head reveal"><p class="eyebrow dk">Por que a Vektor</p><h2>O padrão que sua obra merece</h2><p>Climatização é investimento de longo prazo. O que muda o resultado é como o serviço é feito.</p></div>
+  <div class="dif reveal">
+   <div><b>01</b><h3>Equipe própria</h3><p>Sem terceirização: técnicos treinados, uniformizados e identificados em cada atendimento.</p></div>
+   <div><b>02</b><h3>Responsabilidade técnica</h3><p>Projetos, laudos e PMOC com acompanhamento técnico e documentação para sua empresa.</p></div>
+   <div><b>03</b><h3>Segurança do trabalho</h3><p>Equipe com EPIs e procedimentos de segurança para trabalho em altura e elétrica.</p></div>
+   <div><b>04</b><h3>Relatório de cada serviço</h3><p>Checklist, fotos e registro do que foi feito. Você sabe exatamente o estado dos seus equipamentos.</p></div>
+   <div><b>05</b><h3>Pronta para empresas</h3><p>Nota fiscal, contratos de manutenção e atendimento a processos de licitação.</p></div>
+   <div><b>06</b><h3>Do projeto ao pós-obra</h3><p>Um único responsável da infraestrutura à manutenção. Sem empurra-empurra entre fornecedores.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="engenharia">
+ <div class="wrap">
+  <div class="head reveal"><p class="eyebrow">Como trabalhamos</p><h2>Engenharia em cada etapa</h2><p>Um processo claro, do primeiro contato à manutenção, para o sistema funcionar como foi projetado.</p></div>
+  <div class="steps reveal">
+   <div class="step"><b>01</b><h3>Visita técnica</h3><p>Levantamento no local: ambientes, ocupação, carga elétrica e pontos de instalação.</p></div>
+   <div class="step"><b>02</b><h3>Projeto e proposta</h3><p>Dimensionamento, escolha dos equipamentos e orçamento detalhado, sem surpresas.</p></div>
+   <div class="step"><b>03</b><h3>Execução</h3><p>Instalação com equipe própria e uniformizada, seguindo normas e o manual do fabricante.</p></div>
+   <div class="step"><b>04</b><h3>Manutenção e PMOC</h3><p>Acompanhamento preventivo e relatórios para garantir eficiência, saúde e garantia.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="padrao" style="border-top:1px solid #1E2024">
+ <div class="wrap std">
+  <div class="reveal">
+   <p class="eyebrow">Padrão industrial</p>
+   <h2 style="margin:12px 0 18px">Execução no nível das grandes empresas</h2>
+   <p style="color:var(--mut-d);font-size:17px;margin:0">Nossa equipe atua em indústrias com exigências rígidas de segurança, qualidade e documentação: frigoríficos, estações de tratamento, laboratórios e usinas. É esse padrão que levamos para todos os clientes, do residencial à multinacional.</p>
+   <div class="envs"><span>Frigoríficos</span><span>Estações de tratamento (ETE)</span><span>Laboratórios</span><span>Usinas hidrelétricas</span><span>Agroindústria</span></div>
+  </div>
+  <ul class="reveal"><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Integração de segurança e documentação da equipe: ASO, treinamentos e fichas de EPI</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Trabalho conforme NR-10 (eletricidade) e NR-35 (trabalho em altura)</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>APR e permissão de trabalho sempre que o cliente exige</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Rastreabilidade por equipamento e número de patrimônio</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Checklists padronizados e relatório fotográfico de cada intervenção</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Responsável técnico habilitado, com ART/TRT nos serviços que exigem</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Recolhimento de fluido refrigerante e destinação correta de resíduos</span></li><li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5 9-10"/></svg><span>Cronograma planejado para não parar a produção</span></li></ul>
+ </div>
+</section>
+
+<section id="segmentos">
+ <div class="wrap">
+  <div class="head"><p class="eyebrow dk">Segmentos</p><h2>Para quem trabalhamos</h2></div>
+  <div class="seg reveal">
+   <div><i></i><span><h3>Indústria e frigoríficos</h3><p>Climatização de áreas técnicas, ETEs, salas de painéis e refrigeração.</p></span></div>
+   <div><i></i><span><h3>Construtoras e condomínios</h3><p>Infraestrutura na obra e PMOC para áreas comuns.</p></span></div>
+   <div><i></i><span><h3>Comércio e varejo</h3><p>Lojas, supermercados, escritórios e hotéis.</p></span></div>
+   <div><i></i><span><h3>Saúde e laboratórios</h3><p>Clínicas, laboratórios e ambientes com controle de qualidade do ar.</p></span></div>
+   <div><i></i><span><h3>Residencial alto padrão</h3><p>Projetos integrados à arquitetura, com acabamento limpo.</p></span></div>
+   <div><i></i><span><h3>Órgãos públicos</h3><p>Atendimento a licitações e contratos de manutenção.</p></span></div>
+  </div>
+ </div>
+</section>
+
+<section id="marcas">
+ <div class="wrap">
+  <div class="head"><p class="eyebrow dk">Marcas</p><h2>Experiência com as principais marcas</h2><p>Instalamos e mantemos equipamentos dos principais fabricantes do mercado.</p></div>
+  <div class="brands reveal"><span>ELGIN</span><span>LG</span><span>GREE</span><span>AGRATTO</span><span>POLAR</span><span>AIWA</span><span>COLORMAQ</span></div>
+ </div>
+</section>
+
+<div class="band">
+ <div class="wrap">
+  <div><h2>Sua empresa está com o PMOC em dia?</h2><p>A Lei 13.589/2018 exige Plano de Manutenção, Operação e Controle para ambientes climatizados de uso público e coletivo. Fazemos o plano, a execução e os relatórios.</p></div>
+  <div style="display:flex;flex-wrap:wrap;gap:12px"><a class="btn btn-dark" href="#pmoc">Entenda o PMOC</a><a class="btn btn-dark" style="background:transparent;color:var(--ink);border-color:var(--ink)" href="https://wa.me/5554993651415?text=Ol%C3%A1%2C%20quero%20informa%C3%A7%C3%B5es%20sobre%20PMOC%20para%20minha%20empresa." target="_blank" rel="noopener">Regularizar agora</a></div>
+ </div>
+</div>
+
+<section id="duvidas">
+ <div class="wrap">
+  <div class="head reveal"><p class="eyebrow dk">Dúvidas frequentes</p><h2>Perguntas que sempre recebemos</h2></div>
+  <div class="faq reveal">
+   <details><summary>O que é PMOC e quem precisa ter?</summary><p>É o Plano de Manutenção, Operação e Controle dos sistemas de climatização. Pela Lei 13.589/2018, é obrigatório em edificações de uso público e coletivo climatizadas, como empresas, comércio, escolas, clínicas e condomínios. <a href="#pmoc">Veja como fazemos o PMOC</a>.</p></details>
+   <details><summary>Como saber a capacidade (BTUs) certa para o ambiente?</summary><p>Depende da área, da incidência de sol, do número de pessoas e dos equipamentos no local. Na visita técnica fazemos o cálculo de carga térmica e indicamos o equipamento correto, sem sobra nem falta.</p></details>
+   <details><summary>Vocês fazem a infraestrutura antes da obra terminar?</summary><p>Sim. Passamos tubulação frigorífica, drenos e ponto elétrico durante a obra, antes do reboco e do forro. Depois é só instalar os equipamentos, sem quebrar nada.</p></details>
+   <details><summary>Atendem empresas, indústrias e licitações?</summary><p>Sim. Trabalhamos com contratos de manutenção, emissão de nota fiscal e documentação para processos de licitação.</p></details>
+   <details><summary>De quanto em quanto tempo o ar-condicionado precisa de manutenção?</summary><p>Varia com o uso e o ambiente. Em empresas, a frequência segue o PMOC. Em residências, a limpeza periódica mantém o consumo baixo e o ar saudável; na visita indicamos o intervalo ideal para o seu caso.</p></details>
+  </div>
+ </div>
+</section>
+
+<section class="dark" id="contato">
+ <div class="wrap contact">
+  <div>
+   <div class="head" style="margin-bottom:32px"><p class="eyebrow">Contato</p><h2>Vamos falar do seu projeto</h2><p>Mande os detalhes e retornamos com a melhor solução.</p></div>
+   <div class="info">
+    <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h4l2 5-2.5 1.5a11 11 0 0 0 5 5L14 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 7a2 2 0 0 1 2-2"/></svg><div><small>WHATSAPP</small><a class="v" href="https://wa.me/5554993651415" target="_blank" rel="noopener">(54) 99365-1415</a></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><small>E-MAIL</small><a class="v" href="mailto:contato@vektorsystems.com.br">contato@vektorsystems.com.br</a></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><div><small>ENDEREÇO</small><span>Rua Nadyr Santin, 1125 · Paiol Grande<br>Erechim/RS · CEP 99712-511</span></div></div>
+    <div class="row"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><div><small>CNPJ</small><span>70.085.298/0001-65</span></div></div>
+   </div>
+   <p class="region">Base em Erechim/RS, atendendo o Alto Uruguai, Passo Fundo e o Oeste de SC, com projetos em RS, SC, PR, SP, GO e RJ.</p>
+  </div>
+  <form id="f" novalidate>
+   <label>Nome<input name="nome" required autocomplete="name"></label>
+   <label>Telefone<input name="tel" type="tel" required autocomplete="tel"></label>
+   <label>Cidade<input name="cidade"></label>
+   <label>Tipo de serviço
+    <select name="tipo">
+     <option>Instalação</option><option>Projeto</option><option>Sistema central / VRF</option><option>PMOC / Manutenção</option><option>Refrigeração</option><option>Infraestrutura para obra</option><option>Outro</option>
+    </select>
+   </label>
+   <label class="full">Mensagem<textarea name="msg" placeholder="Conte o que você precisa: ambientes, quantidade de equipamentos, prazo..."></textarea></label>
+   <button class="btn btn-dark full" type="submit">Enviar pelo WhatsApp</button>
+   <div id="ok" role="status"></div>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer>
+ <div class="wrap">
+  <div class="cols">
+   <div>
+    <a class="brand" href="#inicio" style="margin:0 0 14px"><svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true"><polygon points="50,6 88,28 88,72 50,94 12,72 12,28" fill="none" stroke="#C9A55A" stroke-width="6"/><path d="M30 34 L50 70 L70 34" fill="none" stroke="#C9A55A" stroke-width="10"/></svg><span><b>VEKTOR</b><small>SYSTEMS</small></span></a>
+    <p style="margin:0;max-width:360px">Engenharia em climatização: projeto, instalação, sistemas centrais, PMOC e refrigeração.</p>
+   </div>
+   <div><h4>NAVEGUE</h4><a href="#servicos">Serviços</a><a href="#diferenciais">Diferenciais</a><a href="#engenharia">Como trabalhamos</a><a href="#duvidas">Dúvidas</a></div>
+   <div><h4>CONTATO</h4><a href="https://wa.me/5554993651415" target="_blank" rel="noopener">(54) 99365-1415</a><a href="mailto:contato@vektorsystems.com.br">contato@vektorsystems.com.br</a><span>Erechim/RS</span></div>
+  </div>
+  <div class="legal">Vektor Systems Ltda · CNPJ 70.085.298/0001-65 · Rua Nadyr Santin, 1125 · Paiol Grande · Erechim/RS · CEP 99712-511</div>
+ </div>
+</footer>
+
+<dialog id="dlg" aria-labelledby="dlg-t">
+ <div class="dlg-in">
+  <div class="dlg-hd"><p class="eyebrow" id="dlg-e">Serviço · ficha técnica</p><h3 id="dlg-t"></h3><button class="dlg-x" type="button" aria-label="Fechar">×</button></div>
+  <div class="dlg-bd" id="dlg-b"></div>
+  <div class="dlg-ft"><small>Vektor Systems · Engenharia em climatização</small><a class="btn btn-gold" id="dlg-wa" target="_blank" rel="noopener">Solicitar este serviço</a></div>
+ </div>
+</dialog>
+
+<a class="float" href="https://wa.me/5554993651415" target="_blank" rel="noopener" aria-label="Falar no WhatsApp"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/><path d="M9 9.5c.3 2.3 2.2 4.4 5.5 5.5"/></svg></a>
+
+<script>
+document.getElementById('f').addEventListener('submit',function(e){
+ e.preventDefault();
+ var d=new FormData(this),ok=document.getElementById('ok');
+ if(!d.get('nome')||!d.get('tel')){ok.className='show';ok.textContent='Preencha nome e telefone para continuar.';return;}
+ var t='Olá! Vim pelo site da Vektor.\nNome: '+d.get('nome')+'\nTelefone: '+d.get('tel')+(d.get('cidade')?'\nCidade: '+d.get('cidade'):'')+'\nServiço: '+d.get('tipo')+(d.get('msg')?'\nMensagem: '+d.get('msg'):'');
+ var url='https://wa.me/5554993651415?text='+encodeURIComponent(t);
+ ok.className='show';
+ ok.innerHTML='';
+ var p=document.createElement('p');p.style.margin='0 0 10px';p.textContent='Mensagem pronta. Toque no botão para abrir o WhatsApp e enviar:';
+ var a=document.createElement('a');a.href=url;a.target='_blank';a.rel='noopener';a.className='btn btn-gold';a.textContent='Abrir WhatsApp';
+ ok.appendChild(p);ok.appendChild(a);
+});
+var SVC={"projetos": {"t": "Projetos e dimensionamento", "i": "Climatização começa no cálculo. Equipamento pequeno demais não vence o calor; grande demais liga e desliga, gasta mais energia e não controla a umidade. O projeto define o sistema certo antes de qualquer compra.", "inc": ["Levantamento no local: arquitetura, ocupação, insolação e cargas internas", "Cálculo de carga térmica por ambiente", "Escolha do sistema (split, multi-split, dutado, VRF ou central) comparando custo de instalação e de operação", "Layout de evaporadoras, condensadoras, rotas de tubulação e drenos", "Dimensionamento dos circuitos elétricos dedicados", "Compatibilização com elétrica, hidráulica, forro e estrutura"], "nor": ["ABNT NBR 16401 — instalações de ar-condicionado", "Manuais técnicos dos fabricantes", "Referências ASHRAE de conforto térmico e ventilação"], "ent": ["Memorial de cálculo e memorial descritivo", "Layout técnico das instalações", "Lista de materiais e orçamento executivo"]}, "splits": {"t": "Instalação de splits", "i": "A maior parte dos defeitos em split nasce na instalação: vácuo mal feito, flange vazando, dreno sem caimento. Nossa instalação segue o manual do fabricante passo a passo, que é também a condição da garantia do equipamento.", "inc": ["Hi-wall, piso-teto, cassete, dutado e multi-split", "Tubulação de cobre isolada, com flanges feitos na medida", "Teste de estanqueidade com nitrogênio", "Vácuo com bomba e vacuômetro", "Ajuste da carga de fluido conforme o comprimento da linha", "Dreno com caimento correto e teste com água", "Ponto elétrico dedicado com proteção adequada", "Limpeza do local e orientação de uso"], "nor": ["Manual de instalação do fabricante", "ABNT NBR 5410 — instalações elétricas", "NR-35 — trabalho em altura"], "ent": ["Checklist de instalação com fotos", "Registro de pressões, tensão e corrente na partida", "Termo de garantia do serviço"]}, "vrf": {"t": "Sistemas centrais e VRF", "i": "Sistemas centrais e VRF exigem montagem e comissionamento rigorosos. Um erro de brasagem ou de vácuo compromete o sistema inteiro, por isso cada etapa é testada e registrada.", "inc": ["Redes frigoríficas com brasagem sob fluxo de nitrogênio", "Derivadores (refnets) conforme projeto do fabricante", "Teste de pressão por etapas e vácuo profundo", "Cálculo da carga adicional de fluido refrigerante", "Rede de comunicação e controle centralizado", "Dutos, grelhas e difusores", "Comissionamento e partida, com o fabricante quando exigido", "Manutenção preventiva e corretiva"], "nor": ["ABNT NBR 16401", "Procedimentos de instalação e partida do fabricante", "Boas práticas ASHRAE"], "ent": ["Relatório de comissionamento com pressões, vácuo e parâmetros de operação", "As built das redes", "Plano de manutenção do sistema"]}, "pmoc": {"t": "PMOC e manutenção", "i": "O PMOC (Plano de Manutenção, Operação e Controle) é obrigatório pela Lei 13.589/2018 em ambientes climatizados de uso público e coletivo. Mais do que cumprir a lei, ele garante ar saudável, menor consumo de energia e equipamentos durando mais.", "quem": ["Empresas, indústrias e escritórios", "Comércio, supermercados e hotéis", "Escolas, clínicas e laboratórios", "Condomínios (áreas comuns) e órgãos públicos"], "inc": ["Inventário e identificação de todos os equipamentos (patrimônio, capacidade, local)", "Plano com rotinas e periodicidade por equipamento", "Responsável técnico habilitado", "Limpeza de filtros, serpentinas, bandejas e drenos", "Verificação elétrica, de pressões e de funcionamento", "Registro de cada intervenção e das pendências encontradas", "Laudo quando o reparo não é viável"], "nor": ["Lei 13.589/2018", "Portaria MS nº 3.523/1998", "Resolução ANVISA RE nº 9/2003 — qualidade do ar interior", "ABNT NBR 13971 — manutenção programada"], "ent": ["Documento do PMOC", "ART/TRT do responsável técnico", "Relatórios periódicos com fotos", "Histórico por equipamento, pronto para fiscalização e auditoria"]}, "refrigeracao": {"t": "Refrigeração comercial", "i": "Em câmara fria e refrigeração industrial, parada é prejuízo: produto perdido e operação travada. Atuamos com diagnóstico rápido e manutenção preventiva para evitar a parada.", "inc": ["Câmaras frias de resfriados e congelados", "Seleção de unidade condensadora e evaporador", "Troca de compressores", "Bebedouros industriais", "Localização de vazamentos e recarga de fluido", "Controladores e ajuste de degelo", "Preventiva com registro de temperaturas"], "nor": ["Procedimentos dos fabricantes", "Recolhimento de fluido refrigerante, sem descarte na atmosfera"], "ent": ["Relatório técnico do atendimento", "Laudo em caso de troca ou condenação de equipamento"]}, "infraestrutura": {"t": "Infraestrutura para obras", "i": "O momento certo de preparar o ar-condicionado é durante a obra, antes do reboco, do gesso e da pintura. Fica tudo embutido, testado e pronto para receber os equipamentos.", "inc": ["Pontos definidos conforme o layout da arquitetura", "Tubulação frigorífica embutida, isolada e pressurizada", "Drenos com caimento até o ponto de descarte", "Ponto elétrico dedicado", "Teste de estanqueidade e lacre das pontas", "Compatibilização com elétrica, hidráulica e forro"], "nor": ["ABNT NBR 16401", "Manuais de instalação dos fabricantes"], "ent": ["Relatório com fotos das rotas e teste de pressão", "Termo de entrega por unidade, ideal para construtoras"]}, "laudos": {"t": "Laudos e diagnósticos", "i": "Consertar ou trocar? Em empresa, o equipamento é patrimônio e a decisão precisa de base técnica documentada.", "inc": ["Inspeção e testes elétricos, de pressões e do compressor", "Identificação da causa da falha", "Análise de viabilidade técnica e econômica do reparo", "Registro fotográfico e número de patrimônio", "Recomendação técnica"], "nor": ["Procedimentos de diagnóstico dos fabricantes"], "ent": ["Laudo técnico assinado, aceito para baixa de patrimônio, seguro e auditoria interna"]}, "exaustao": {"t": "Exaustão e ventilação", "i": "Renovação de ar e exaustão bem feitas controlam calor, odores, umidade e contaminantes, e são parte da qualidade do ar exigida em ambientes climatizados.", "inc": ["Cálculo de vazões e trocas de ar", "Exaustores, dutos, coifas e grelhas", "Ar externo para ambientes climatizados", "Medição e balanceamento de vazão", "Manutenção e limpeza"], "nor": ["ABNT NBR 16401 — vazões de ar externo", "Resolução ANVISA RE nº 9/2003", "Referências ASHRAE de ventilação"], "ent": ["Relatório de medição e balanceamento"]}};
+(function(){
+ var d=document.getElementById('dlg');if(!d||!d.showModal)return;
+ function render(id){
+  var v=SVC[id];if(!v)return false;
+  document.getElementById('dlg-t').textContent=v.t;
+  var b=document.getElementById('dlg-b');b.innerHTML='';
+  var p=document.createElement('p');p.className='intro';p.textContent=v.i;b.appendChild(p);
+  [['PARA QUEM','quem',''],['O QUE ESTÁ INCLUSO','inc',''],['NORMAS E REFERÊNCIAS','nor','norms'],['O QUE VOCÊ RECEBE','ent','']].forEach(function(x){
+   if(!v[x[1]])return;var h=document.createElement('h4');h.textContent=x[0];b.appendChild(h);
+   var u=document.createElement('ul');if(x[2])u.className=x[2];
+   v[x[1]].forEach(function(t){var li=document.createElement('li');li.textContent=t;u.appendChild(li)});b.appendChild(u);
+  });
+  document.getElementById('dlg-wa').href='https://wa.me/5554993651415?text='+encodeURIComponent('Olá! Vim pelo site da Vektor e quero informações sobre: '+v.t+'.');
+  b.scrollTop=0;return true;
+ }
+ function open(id){if(render(id)&&!d.open){try{d.showModal()}catch(e){}}}
+ function close(){if(d.open)d.close();}
+ document.querySelectorAll('[data-svc]').forEach(function(c){c.addEventListener('click',function(){var id=c.getAttribute('data-svc');if(location.hash.slice(1)===id)open(id);else location.hash=id;})});
+ d.querySelector('.dlg-x').addEventListener('click',close);
+ d.addEventListener('click',function(e){if(e.target===d)close()});
+ d.addEventListener('close',function(){if(SVC[location.hash.slice(1)]){try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}}});
+ function route(){var h=location.hash.slice(1);if(SVC[h])open(h);else close();}
+ window.addEventListener('hashchange',route);route();
+})();
+(function(){
+ var els=document.querySelectorAll('.reveal');
+ if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});return;}
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+ els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
